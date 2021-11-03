@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,10 +18,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-private void second (){
 
+public void second (View view){
 
-
+setContentView(R.layout.fragment_blank1);
+    Log.d("Funcao","Passou na função");
 
     }
 }
